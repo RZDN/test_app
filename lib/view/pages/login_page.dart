@@ -32,13 +32,29 @@ class _LoginPageState extends State<LoginPage> {
             navigator.pop();
           },
           child: Container(
-            height: 90,
-            width: 150,
+            height: 120,
+            width: 160,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.orange,
             ),
-            child: const Center(child: Text("Iniciar")),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 60,
+                    child: Image.asset('lib/shared/icons/google.png'),
+                  ),
+                  const Text(
+                    "Iniciar con Google",
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),

@@ -1,6 +1,3 @@
-import 'dart:convert';
-
-import 'package:http/http.dart';
 import 'package:test_app/model/stats.dart';
 
 class PokemonDetail {
